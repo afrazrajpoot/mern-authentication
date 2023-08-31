@@ -13,7 +13,11 @@ const scheme = new mongoose.Schema(
       type: String,
       required: true,
     },
+     age:{
+      type:String
+     }
   },
+ 
   { timestamps: true }
 );
 const User = mongoose.model('user',scheme)
